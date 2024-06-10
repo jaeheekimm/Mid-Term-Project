@@ -1,56 +1,183 @@
-_<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style> 
-  header {
-    margin: 0 auto; 
-    text-align: center; 
-  }
-  article {
-    margin: 0 auto; 
-    text-align: center; 
-  }
-  footer {
-    margin: 0 auto; 
-    text-align: center; 
-  }
-  footer table {
-  margin: 0 auto; 
-  text-align: center; 
-}
-  </style>
-  <title>OpenSource(SW) Assignment</title>
-</head>
-<body>
+  <title>my sample resume</title>
 
+  <style>
+    body {
+      width: 980px; 
+      margin: 0 auto; 
+    }
+
+    .clear {
+        clear: both; 
+    }
+
+    header #home {
+      font-size: xx-large;
+      font-family: sans-serif;
+      color: white;
+      background-color: #333;
+      text-align: center;
+      padding: 15px;
+      margin: 0;
+    }
+
+    .menu {
+      background-color: gray;
+      padding: 10px;
+      margin: 0;
+    }
+
+    .menu li {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    .menu ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu a {
+      list-style: none;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    article {
+      display: flex;
+      text-align: center;
+    }
+
+    .profile {
+      float: left;
+      text-align: center;
+      flex: 1;
+      padding: 20px;
+    }
+
+    .profile img {
+      width: 50%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .profile table {
+      width: 100%;
+      margin: 10px auto;
+      border-collapse: collapse;
+    }
+
+    .profile th,
+    .profile td {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .profile th {
+      background-color: #585656;
+      color: white;
+      width: 40%;
+    }
+
+    .profile td {
+      background-color: #fff;
+    }
+
+    .education {
+      float: right;
+      text-align: center;
+      flex: 2;
+      background-color: lightgray;
+    }
+
+    .skills {
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .logo {
+      width: calc(25% - 10px);
+      margin: 10px 0.5%;
+      padding: 10px;
+      display: inline-block;
+      height: 200px;
+      border: 2px solid darkslategray;
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo img {
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
   <header>
-    <h2 id="Home">32197148 Jaehee Kim</h2>
-    <nav>
-      <li><a href="#Home">Home</a>
-        <a href="#Profile">Profile</a>
-        <a href="#Education">Education</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Contact">Contact</a>
-    </nav>
-   
-    <hr>
+    <div id="home">
+      <h2>Jaehee's Homepage</h2>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Profile">Profile</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
   </header>
 
   <article>
-    <section>
-      <h3 id="Profile">Jaehee Kim</h3>
-      <img src="https://image.ajunews.com/content/image/2014/08/29/20140829165234761245.jpg" 
-      alt="Hello Kitty" 
-      style="width:300px">
-      <p>I am a full stack developer.<br>
-        I'm looking for a position in back-end developer where i can utilize my skills and experiences.</p>
-      <hr>
+    <section class="profile">
+      <h2>32197148 Jaehee Kim</h2>
+      <img src="https://image.ajunews.com/content/image/2014/08/29/20140829165234761245.jpg" alt="Hello Kitty">
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Jaehee Kim</td>
+        </tr>
+        <tr>
+          <th>Student ID</th>
+          <td>32197148</td>
+        </tr>
+        <tr>
+          <th>Department</th>
+          <td>Software</td>
+        </tr>
+        <tr>
+          <th>Grade</th>
+          <td>4th year</td>
+        </tr>
+      </table>
     </section>
+    <div class="clear"></div>
 
-    <section>
-      <h2 id="Education">Education</h2>
+    <section class="education">
+      <h3><b>Education</b></h3>
       <p><strong>Dankook University</strong><br>
       &lt;Bachelor of Computer Sciences&gt;</p>
       <p>Relevant Course Work: System Security, Malware Analysis</p>
@@ -59,17 +186,21 @@ _<!DOCTYPE html>
         <iframe src="https://www.youtube.com/embed/l2Hh4hsq9l0" title="단국대학교 산업보안학과 홍보영상" width="50%" height="400px"></iframe>
       </details>
       <hr>
-    </section>
 
-    <section>
-      <h2 id="Skills">Skills</h2>
-      <p><strong>Front-end :</strong> HTML, CSS, JavaScript, React.JS<br>
-        <strong>Back-end :</strong> Java, Python, Ruby, MySQL, Nginx</p>
-      <hr>
+      <h3><b>Skills</b></h3>
+      <div class="skills">
+        <div class="logo"><img src="images/java.jpg" alt="Java"></div>
+        <div class="logo"><img src="images/c.jpg" alt="C"></div>
+        <div class="logo"><img src="images/python.jpg" alt="Python"></div>
+        <div class="logo"><img src="images/html.jpg" alt="HTML"></div>
+        <div class="logo"><img src="images/css.jpg" alt="CSS"></div>
+        <div class="logo"><img src="images/javascript.jpg" alt="JavaScript"></div>
+      </div>
     </section>
+    <div class="clear"></div>
 
-    <section>
-      <h2 id="Contact">Contact</h2>
+    <section id="Contact">
+      <h2>Contact</h2>
       <form>
         <ul style="list-style-type: none;">
           <li>
@@ -85,7 +216,7 @@ _<!DOCTYPE html>
           </li>
           <li>
             <label for="c-company">Company : </label>
-            <input type="text" id="c-name">
+            <input type="text" id="c-company">
           </li>
           <li>
             <label for="c-email">Email : </label>
@@ -102,73 +233,72 @@ _<!DOCTYPE html>
 
   <footer>
     <div>
-    <table>
-      <caption>March 2024</caption>
-      <thead>
-        <tr>
-          <th>&nbsp;S&nbsp;</th>
-          <th>&nbsp;M&nbsp;</th>
-          <th>&nbsp;T&nbsp;</th>
-          <th>&nbsp;W&nbsp;</th>
-          <th>&nbsp;T&nbsp;</th>
-          <th>&nbsp;F&nbsp;</th>
-          <th>&nbsp;S&nbsp;</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="5"> </td>
-          <td>1</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>11</td>
-          <td>12</td>
-          <td>13</td>
-          <td>14</td>
-          <td>15</td>
-          <td>16</td>
-        </tr>
-        <tr>
-          <td>17</td>
-          <td>18</td>
-          <td>19</td>
-          <td>20</td>
-          <td>21</td>
-          <td>22</td>
-          <td>23</td>
-        </tr>
-        <tr>
-          <td>24</td>
-          <td>25</td>
-          <td>26</td>
-          <td>27</td>
-          <td>28</td>
-          <td>29</td>
-          <td>30</td>
-        </tr>
-        <tr>
-          <td>31</td>
-          <td colspan="6"> </td>
-        </tr>
-      </tbody>
-    </table>
+      <table>
+        <caption>March 2024</caption>
+        <thead>
+          <tr>
+            <th>&nbsp;S&nbsp;</th>
+            <th>&nbsp;M&nbsp;</th>
+            <th>&nbsp;T&nbsp;</th>
+            <th>&nbsp;W&nbsp;</th>
+            <th>&nbsp;T&nbsp;</th>
+            <th>&nbsp;F&nbsp;</th>
+            <th>&nbsp;S&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="5"></td>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td colspan="6"></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    
     <div>
-    <hr>
-    <p><em>Copyright &copy; 2024 Jaehee Kim </em></p>
-  </div>
+      <hr>
+      <p><em>Copyright &copy; 2024 Jaehee Kim</em></p>
+    </div>
   </footer>
 </body>
 </html>
