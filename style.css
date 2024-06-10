@@ -1,0 +1,124 @@
+body {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+  background-color: rgb(136, 134, 134);
+  padding: 10px;
+  margin: 0;
+}
+
+header #home {
+  font-size: xx-large;
+  font-family: sans-serif;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+}
+
+header a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin: 0 15px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.menu a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.profile img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.profile table {
+  width: 100%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+.profile th,
+.profile td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.profile th {
+  background-color: #585656;
+  color: white;
+  width: 40%;
+}
+
+.profile td {
+  background-color: #fff;
+}
+
+.skills {
+  overflow: hidden;
+  text-align: center;
+}
+
+.logo {
+  width: calc(25% - 10px);
+  margin: 10px 0.5%;
+  padding: 10px;
+  display: inline-block;
+  height: 200px;
+  border: 2px solid darkslategray;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer hr {
+  margin: 20px 0;
+}
