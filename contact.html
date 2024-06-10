@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    body {
+      width: 980px; 
+      margin: 0 auto; 
+      text-align: center;
+    }
+
+    header {
+      background-color: gray;
+      padding: 10px;
+      margin: 0;
+    }
+
+    header a {
+      list-style: none;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      margin: 0 15px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+  </header>
+
+  <section id="Contact">
+    <h2>Contact</h2>
+    <form>
+      <ul style="list-style-type: none;">
+        <li>
+          Employment Type : 
+          <input type="radio" name="time" id="f-time" value="full-time">
+          <label for="f-time">Full-time</label>
+          <input type="radio" name="time" id="p-time" value="part-time">
+          <label for="p-time">Part-time</label>
+        </li>
+        <li>
+          <label for="c-name">Name : </label>
+          <input type="text" id="c-name">
+        </li>
+        <li>
+          <label for="c-company">Company : </label>
+          <input type="text" id="c-company">
+        </li>
+        <li>
+          <label for="c-email">Email : </label>
+          <input type="email" id="c-email" placeholder="id@host">
+        </li>
+        <li>
+          <button type="submit">submit</button>
+        </li>
+      </ul>
+    </form>
+    <hr>
+  </section>
+
+  <footer>
+    <div>
+      <hr>
+      <p><em>Copyright &copy; 2024 Jaehee Kim</em></p>
+    </div>
+  </footer>
+</body>
+</html>

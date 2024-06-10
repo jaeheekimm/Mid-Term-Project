@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <style>
+    body {
+      width: 980px; 
+      margin: 0 auto; 
+      text-align: center;
+    }
+
+    header {
+      background-color: gray;
+      padding: 10px;
+      margin: 0;
+    }
+
+    header a {
+      list-style: none;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      margin: 0 15px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .skills {
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .logo {
+      width: calc(25% - 10px);
+      margin: 10px 0.5%;
+      padding: 10px;
+      display: inline-block;
+      height: 200px;
+      border: 2px solid darkslategray;
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo img {
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+  </header>
+
+  <section class="skills">
+    <h3><b>Skills</b></h3>
+    <div class="logo"><img src="images/java.jpg" alt="Java"></div>
+    <div class="logo"><img src="images/c.jpg" alt="C"></div>
+    <div class="logo"><img src="images/python.jpg" alt="Python"></div>
+    <div class="logo"><img src="images/html.jpg" alt="HTML"></div>
+    <div class="logo"><img src="images/css.jpg" alt="CSS"></div>
+    <div class="logo"><img src="images/javascript.jpg" alt="JavaScript"></div>
+  </section>
+
+  <footer>
+    <div>
+      <hr>
+      <p><em>Copyright &copy; 2024 Jaehee Kim</em></p>
+    </div>
+  </footer>
+</body>
+</html>
