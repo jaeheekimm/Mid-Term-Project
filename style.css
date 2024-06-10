@@ -5,6 +5,7 @@ body {
   margin: 0 auto;
   text-align: center;
   font-family: 'Jua', sans-serif;
+  background-color: #ffe6f0;
 }
 
 .clear {
@@ -12,16 +13,15 @@ body {
 }
 
 header {
-  background-color: rgb(136, 134, 134);
+  background-color: #ffccff;
   padding: 10px;
   margin: 0;
 }
 
 header #home {
   font-size: xx-large;
-  font-family: sans-serif;
   color: white;
-  background-color: #333;
+  background-color: #eb8eba; 
   text-align: center;
   padding: 15px;
   margin: 0;
@@ -30,13 +30,14 @@ header #home {
 header a {
   list-style: none;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 30px;
   color: white;
-  margin: 0 15px;
+  margin: 30px 30px;
 }
 
 header a:hover {
   text-decoration: underline;
+  background-color: #ff99cc;
 }
 
 .menu ul {
@@ -76,11 +77,11 @@ header a:hover {
 .profile td {
   text-align: center;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #f9b7d8;
 }
 
 .profile th {
-  background-color: #585656;
+  background-color: #ffccff;
   color: white;
   width: 40%;
 }
@@ -100,7 +101,7 @@ header a:hover {
   padding: 10px;
   display: inline-block;
   height: 200px;
-  border: 2px solid darkslategray;
+  border: 2px solid f9b7d8;
   background-color: white;
   position: relative;
   overflow: hidden;
@@ -118,10 +119,16 @@ header a:hover {
 }
 
 footer {
+  background-color: #ffccff;
   text-align: center;
   margin-top: 20px;
 }
 
 footer hr {
   margin: 20px 0;
+  border: 1px solid #f9b7d8;
+}
+
+footer p {
+  color: white;
 }
