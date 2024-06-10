@@ -14,7 +14,6 @@ body {
 
 header {
   background-color: #ffccff;
-  padding: 10px;
   margin: 0;
 }
 
@@ -23,7 +22,7 @@ header #home {
   color: white;
   background-color: #eb8eba; 
   text-align: center;
-  padding: 15px;
+  padding: 7px;
   margin: 0;
 }
 
@@ -41,8 +40,9 @@ header a:hover {
 }
 
 .menu ul {
-  padding: 0;
+  padding: 15px;
   margin: 0;
+  
 }
 
 .menu li {
@@ -53,7 +53,7 @@ header a:hover {
 .menu a {
   list-style: none;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 23px;
   color: white;
 }
 
@@ -122,6 +122,7 @@ footer {
   background-color: #ffccff;
   text-align: center;
   margin-top: 20px;
+  padding-bottom: 15px; /* 글자 아래에 공간 추가 */
 }
 
 footer hr {
